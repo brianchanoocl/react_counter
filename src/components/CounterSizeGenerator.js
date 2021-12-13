@@ -7,7 +7,6 @@ function CounterSizeGenerator(props) {
         const sizeValue = isNaN(parseInt(event.target.value)) ? 0 : parseInt(event.target.value);
         setSize(sizeValue);
         props.updateSize(sizeValue);
-        props.resetCounter();
     }
 
     return(
